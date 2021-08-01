@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e7325b8e.chunk.css",
+    "main.js": "/static/js/main.ef368914.chunk.js",
+    "main.js.map": "/static/js/main.ef368914.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.df071513.js",
+    "runtime-main.js.map": "/static/js/runtime-main.df071513.js.map",
+    "static/js/2.7ba30782.chunk.js": "/static/js/2.7ba30782.chunk.js",
+    "static/js/2.7ba30782.chunk.js.map": "/static/js/2.7ba30782.chunk.js.map",
+    "static/js/3.f7dc9569.chunk.js": "/static/js/3.f7dc9569.chunk.js",
+    "static/js/3.f7dc9569.chunk.js.map": "/static/js/3.f7dc9569.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.e7325b8e.chunk.css.map": "/static/css/main.e7325b8e.chunk.css.map",
+    "static/js/2.7ba30782.chunk.js.LICENSE.txt": "/static/js/2.7ba30782.chunk.js.LICENSE.txt",
+    "static/media/StudentsAddFields.scss": "/static/media/Add_pupil_button_icon_purple.19f0b4ad.svg",
+    "static/media/StudentsTabs.scss": "/static/media/Vector_top.054817a7.svg",
+    "static/media/anonymous.svg": "/static/media/anonymous.d4f4a0ca.svg",
+    "static/media/arrow.svg": "/static/media/arrow.7524cf35.svg",
+    "static/media/blog.svg": "/static/media/blog.2b45580b.svg",
+    "static/media/course.svg": "/static/media/course.2f51d6c8.svg",
+    "static/media/energy.svg": "/static/media/energy.6612f8dc.svg",
+    "static/media/login.svg": "/static/media/login.133d8b64.svg",
+    "static/media/logo-short.svg": "/static/media/logo-short.6068befa.svg",
+    "static/media/logo.svg": "/static/media/logo.e41efb95.svg",
+    "static/media/logout.svg": "/static/media/logout.ac5187b0.svg",
+    "static/media/mad-scientist_1.6fc2e620.svg": "/static/media/mad-scientist_1.6fc2e620.svg",
+    "static/media/money.svg": "/static/media/money.550a59dd.svg",
+    "static/media/play.svg": "/static/media/play.cfe0c963.svg",
+    "static/media/progress.svg": "/static/media/progress.b8adae26.svg",
+    "static/media/signup.svg": "/static/media/signup.404afd1c.svg",
+    "static/media/task.svg": "/static/media/task.16023bf4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.df071513.js",
+    "static/js/2.7ba30782.chunk.js",
+    "static/css/main.e7325b8e.chunk.css",
+    "static/js/main.ef368914.chunk.js"
+  ]
+}
