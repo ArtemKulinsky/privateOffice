@@ -1,0 +1,33 @@
+.students .tabs-type-selection__item {
+  margin: 0px 10px 0 0;
+  cursor: pointer;
+}
+
+.students .tabs-type-selection__item.active {
+  color: #235390;
+}
+
+@media (max-width: 1700px) {
+  .students .tabs-type-selection__item {
+    margin-right: 20px;
+    font-size: 19px;
+  }
+  .students .tabs-type-selection__item.active {
+    color: #235390;
+  }
+}
+
+@media (max-width: 767px) {
+  .students .tabs-type-selection {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .students .tabs-type-selection__item {
+    margin-right: 20px;
+    font-size: 19px;
+  }
+  .students .tabs-type-selection__item.active {
+    color: #235390;
+  }
+}

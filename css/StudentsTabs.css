@@ -1,0 +1,106 @@
+.students .tabs {
+  overflow: hidden;
+  grid-area: tabs;
+  margin: 0 0 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.students .tabs__arrow {
+  min-width: 30px;
+  height: 30px;
+  background: no-repeat 0 0 / 30px 30px;
+  border-radius: 50%;
+  border: none;
+}
+
+.students .tabs__arrow_disabled {
+  display: none;
+}
+
+.students .tabs__arrow_prev {
+  margin: 0 15px 0 0;
+  background-image: url(./assets/Vector_left.svg);
+}
+
+.students .tabs__arrow_next {
+  margin: 0 0 0 15px;
+  background-image: url(./assets/Vector_right.svg);
+}
+
+.students .tabs__list {
+  position: relative;
+  overflow: hidden;
+}
+
+.students .tabs__track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  -webkit-transition: margin-left 0.3s ease, margin-top 0.3s ease;
+  transition: margin-left 0.3s ease, margin-top 0.3s ease;
+}
+
+@media (max-width: 1366px) {
+  .students .tabs {
+    margin: 0 0 0 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .students .tabs {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 414px) {
+  .students .tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .students .tabs__list {
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+    max-height: 220px;
+  }
+  .students .tabs__track {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .students .tabs__arrow {
+    margin: 0;
+  }
+  .students .tabs__arrow_prev {
+    background-image: url(./assets/Vector_top.svg);
+  }
+  .students .tabs__arrow_next {
+    background-image: url(./assets/Vector_bottom.png);
+  }
+}
+
+@media (max-width: 375px) {
+  .students .tabs__list {
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+    max-height: 170px;
+  }
+}

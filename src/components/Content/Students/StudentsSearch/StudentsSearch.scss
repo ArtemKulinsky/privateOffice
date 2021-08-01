@@ -1,0 +1,29 @@
+.students {
+
+   &__search {
+      grid-area: search;
+      align-self: center;
+      display: none;
+      width: 100%;
+      margin: 0 0 20px 0;
+
+      @media (max-width:414px) {
+         display: block;
+      }
+
+      & input {
+         width: 100%;
+         height: 33px;
+         outline: none;
+         padding-left: 33px;
+         border: 1px solid #AAAAAA;
+         border-radius: 10px;
+         font-size: 17px;
+         font-family: Nunito;
+         background: url(./assets/Search.png) no-repeat 14px 50%;
+      }
+   }
+
+   
+}
+

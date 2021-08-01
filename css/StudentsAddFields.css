@@ -1,0 +1,96 @@
+.students .add-fields {
+  grid-area: add-fields;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.students .add-fields .add-field {
+  font-family: Nunito;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 13px 10px 15px 50px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.students .add-fields__add-student {
+  background: url(./assets/Add_pupil_button_icon_blue.svg) #fff no-repeat 13px 50%;
+  color: #235390;
+  border: 2px solid #235390;
+  margin: 0 0 20px 0;
+}
+
+.students .add-fields__add-student:active {
+  background-color: #6c97cf;
+}
+
+.students .add-fields__add-group {
+  background: url(./assets/Add_pupil_button_icon_purple.svg) #fff no-repeat 13px 50%;
+  color: #C200AF;
+  border: 2px solid #C200AF;
+}
+
+.students .add-fields__add-group:active {
+  background-color: #eb84e0;
+}
+
+@media (max-width: 1700px) {
+  .students .add-fields .add-field {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .students .add-fields .add-field {
+    font-size: 15px;
+    padding: 6px 10px 7px 40px;
+    background-size: 25px 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .students .add-fields {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 33px;
+  }
+  .students .add-fields__add-student {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .students .add-fields {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .students .add-fields .add-field {
+    width: 185px;
+  }
+  .students .add-fields__add-student {
+    margin-right: 0;
+    margin-bottom: 14px;
+  }
+}

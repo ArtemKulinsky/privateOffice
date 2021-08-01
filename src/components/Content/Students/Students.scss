@@ -1,0 +1,62 @@
+.students {
+   margin: 3px;
+   box-shadow: -1px -1px 10px 1px rgba(0, 0, 0, 0.04), 1px 1px 10px 1px rgba(0, 0, 0, 0.04);
+   padding: 30px 40px 40px 40px;
+   border-radius: 20px;
+   display: grid;
+   grid-template-areas: 
+      "title title"
+      "tabs-type-selection tabs-type-selection"
+      "search search"
+      "add-fields tabs";
+
+   &__title {
+      grid-area: title;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+   }
+
+   @media (max-width: 1700px) {
+
+      &__title {
+      font-size: 35px;
+      }
+   }
+
+   @media (max-width: 1366px) {
+      &__title {
+         font-size: 29px;
+      }
+   }
+
+   
+   @media (max-width: 767px) {
+      &__title {
+         justify-self: center;
+         font-size: 29px;
+      }
+   }
+}
+
+@media (max-width: 767px) {
+   .students {
+      grid-template-areas:
+      "title"
+      "tabs-type-selection"
+      "add-fields" 
+      "search"
+      "tabs";
+   }
+}
+
+@media (max-width: 600px) {
+   .students {
+      padding: 21px 24px 10px 24px;
+
+      &__title {
+         margin-bottom: 10px;
+      }
+   }
+}
+

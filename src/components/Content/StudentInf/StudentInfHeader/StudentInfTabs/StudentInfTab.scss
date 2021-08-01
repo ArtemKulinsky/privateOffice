@@ -1,0 +1,30 @@
+.student-inf {
+
+  &__tabs {
+
+    & .tab {
+      margin-right: 15px ;
+      cursor: pointer;
+      color: #235390;
+      font-weight: bold;
+      font-size: 25px;
+
+      &.active {
+        color: #C200AF;
+
+        p {
+          position: relative;
+
+          &::before {
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 80%;
+            background-color: #C200AF;
+            bottom: -2px;
+          }
+        }
+      }
+    }
+  }
+}

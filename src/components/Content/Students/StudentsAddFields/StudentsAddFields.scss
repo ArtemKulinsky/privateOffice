@@ -1,0 +1,94 @@
+.students {
+
+   & .add-fields {
+      grid-area: add-fields;
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      align-items: stretch;
+
+      & .add-field {
+         font-family: Nunito;
+         font-weight: bold;
+         font-size: 22px;
+         padding: 13px 10px 15px 50px;
+         border-radius: 10px;
+         text-align: left;
+      }
+
+
+      &__add-student {
+         background: url(./assets/Add_pupil_button_icon_blue.svg) #fff no-repeat 13px 50%;
+         color: #235390;
+         border: 2px solid #235390;
+         margin: 0 0 20px 0;
+
+         &:active {
+            background-color: #6c97cf;
+         }
+      }
+
+      &__add-group {
+         background: url(./assets/Add_pupil_button_icon_purple.svg) #fff no-repeat 13px 50%;
+         color: #C200AF;
+         border: 2px solid #C200AF;
+
+         &:active {
+            background-color: #eb84e0;
+         }
+      }
+   }
+
+   @media (max-width: 1700px) {
+      
+      & .add-fields {
+
+         & .add-field {
+            font-size: 20px;
+         }
+      }
+   }
+
+   @media (max-width: 1366px) {
+      
+      & .add-fields {
+
+         & .add-field {
+            font-size: 15px;
+            padding: 6px 10px 7px 40px;
+            background-size: 25px 25px;
+         }
+      }
+   }
+
+   @media (max-width: 767px) {
+      
+      & .add-fields {
+         flex-direction: row;
+         justify-content: center;
+         margin-bottom: 33px;
+
+         &__add-student {
+            margin-bottom: 0;
+            margin-right: 20px;
+         }
+      }
+   }
+
+   @media (max-width: 600px) {
+      
+      & .add-fields {
+         flex-direction: column;
+         align-items: center;
+
+         & .add-field {
+            width: 185px;
+         }
+
+         &__add-student {
+            margin-right: 0;
+            margin-bottom: 14px;
+         }
+      }
+   }
+}

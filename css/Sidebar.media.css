@@ -1,0 +1,59 @@
+@media (max-width: 1365px) {
+  .Sidebar {
+    width: 155px;
+  }
+  .Sidebar-wrapper {
+    width: calc(155px - 2 * 8px);
+  }
+  .Sidebar__logo-image {
+    width: calc(100% - 5px);
+    height: 25px;
+  }
+  .Sidebar__icon {
+    width: 25px;
+    height: 25px;
+  }
+  .Sidebar__bottom-item .image-wrapper {
+    width: 25px;
+    height: 25px;
+  }
+  .Sidebar .item--text {
+    font-size: 13px;
+  }
+  .Sidebar .item--ellipsis {
+    margin-left: 45px;
+  }
+  .Sidebar__navigation-item {
+    margin-bottom: 2px;
+  }
+  .Sidebar--closed {
+    max-width: 50px;
+  }
+  .Sidebar--closed .item--text {
+    display: none;
+  }
+  .Sidebar--closed .Sidebar__navigation-list,
+  .Sidebar--closed .Sidebar__account-list {
+    max-width: calc(50px - 16px);
+  }
+}
+
+@media (max-width: 1099px) {
+  .Sidebar {
+    position: absolute;
+    z-index: 1101;
+  }
+}
+
+@media (max-width: 959px) {
+  .Sidebar--closed {
+    display: none;
+  }
+}
+
+@media (max-height: 550px) {
+  .Sidebar__navigation-list {
+    max-height: 150px;
+    overflow: scroll;
+  }
+}

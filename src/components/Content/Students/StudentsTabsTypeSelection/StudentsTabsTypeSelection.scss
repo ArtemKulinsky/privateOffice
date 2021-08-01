@@ -1,0 +1,15 @@
+.students {
+
+   & .tabs-type-selection{
+      grid-area: tabs-type-selection;
+      position: relative;
+      width: 100%;
+      display: flex;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 25px;
+      color: #C200AF;
+      border-bottom: 2px solid #F7F7F7;
+      margin: 0 0 33px 0;
+   }
+}

@@ -1,0 +1,98 @@
+.students {
+   
+   & .tabs {
+      overflow: hidden;
+      grid-area: tabs;
+      margin: 0 0 0 30px;
+      display: flex;
+      flex: 1 0 auto;
+      align-items: center;
+
+      &__arrow {
+         min-width: 30px;
+         height: 30px;
+         background: no-repeat 0 0 / 30px 30px;
+         border-radius: 50%;
+         border: none;
+
+         &_disabled {
+            display: none;
+         }
+
+         &_prev{
+            margin: 0 15px 0 0;
+            background-image: url(./assets/Vector_left.svg);
+            }
+      
+
+         &_next {
+            margin: 0 0 0 15px;
+            background-image: url(./assets/Vector_right.svg);
+         }
+      }
+
+      &__list {
+         position: relative;  
+         overflow: hidden;
+      }
+
+      &__track {
+         display: flex;
+         flex: 1 0 auto;
+         transition: margin-left 0.3s ease, margin-top 0.3s ease;
+      }
+   }
+
+   @media (max-width: 1366px) {
+      & .tabs{
+         margin: 0 0 0 20px;
+      }
+   }
+
+   
+   @media (max-width: 600px) {
+      & .tabs{
+         font-size: 13px;
+      }
+   }
+
+   @media (max-width: 414px) {
+      & .tabs{
+         flex-direction: column;
+         font-size: 15px;
+         font-weight: bold;
+         margin: 0;
+
+            &__list {
+               align-self: stretch;
+               max-height: 220px;
+            }
+
+            &__track {
+               flex-direction: column;
+            }
+
+            &__arrow {
+               margin: 0;
+
+               &_prev{
+                  background-image: url(./assets/Vector_top.svg);
+               }
+
+               &_next {
+                  background-image: url(./assets/Vector_bottom.png);
+               }
+            }
+      }
+   }
+
+   @media (max-width: 375px) {
+   & .tabs{
+
+      &__list {
+         align-self: stretch;
+         max-height: 170px;
+      }
+   }
+}
+}

@@ -1,0 +1,45 @@
+.student-inf {
+  box-shadow: -1px -1px 10px 1px rgba(0, 0, 0, 0.04), 1px 1px 10px 1px rgba(0, 0, 0, 0.04);
+  padding: 20px 45px 20px 45px;
+  border-radius: 20px;
+  margin: 3px;
+  
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__tabs {
+    display: flex;
+
+    & .tab {
+      margin-right: 15px ;
+      cursor: pointer;
+      color: #235390;
+
+      &.active {
+        color: #C200AF;
+
+        p {
+          position: relative;
+
+          &::before {
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 80%;
+            background-color: #C200AF;
+            bottom: -2px;
+          }
+        }
+      }
+    }
+  }
+
+  &__body {
+
+    .table {
+      display: flex;
+    }
+  }
+}
