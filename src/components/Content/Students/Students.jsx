@@ -5,7 +5,7 @@ import StudentsSearch from './StudentsSearch/StudentsSearch';
 import StudentsTabs from './StudentsTabs/StudentsTabs';
 import StudentsTabsTypeSelection from './StudentsTabsTypeSelection/StudentsTabsTypeSelection';
 
-const Students = ({students, tabsTypes}) => {
+const Students = ({students, tabsTypes, setLessons}) => {
   return (
     <section
       className="main__students students"
@@ -14,7 +14,10 @@ const Students = ({students, tabsTypes}) => {
       <StudentsTabsTypeSelection tabsTypes={tabsTypes} />
       <StudentsAddFields/>
       <StudentsSearch/>
-      <StudentsTabs students={students} />
+      <StudentsTabs 
+        students={students} 
+        setLessons={setLessons}
+      />
     </section>
   )
 }

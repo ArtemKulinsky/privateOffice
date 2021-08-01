@@ -27,29 +27,13 @@ export const privateOfficeReducer = (state = initialState, action) => {
       case SET_LESSONS:
          return {
             ...state,
-            students: state.students.map(student => {
-               if (student.id === action.studentId) {
-                  return { ...student, lessons: action.lessons }
-               }
-               return student;
-            })
+            lessons: action.lessons
          }
 
       case SET_EXERCISES:
          return {
             ...state,
-            students: state.students.map(student => {
-               if(student.id === action.studentId) {
-                  return { 
-                     ...student, 
-                     lessons: state.students[action.studentId].lessons.map(lesson => {
-                        if(lesson.id === action.lessonId) {
-                           return { ...lesson, exercises: action.exercises}
-                        }
-                        return lesson;
-                     })}
-               }
-            })
+            exercises: action.exercises
          }
    
       default:

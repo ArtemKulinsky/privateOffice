@@ -52,7 +52,7 @@ function slideToNext(itemSize, track, trackLeftPos,
   }
 }
 
-const StudentsTabs = ({students, windowWidth}) => {
+const StudentsTabs = ({students, windowWidth, setLessons}) => {
   const itemsTrack = useRef(null);
   const itemsList = useRef(null);
   const prevButton = useRef(null);
@@ -63,8 +63,8 @@ const StudentsTabs = ({students, windowWidth}) => {
   const slideSteps = 2;
   const windowWidthTabsToColumn = 414;
 
-  let isPrevButtonActive = false;
-  let isNextButtonActive = false;
+  let isPrevButtonActive = true;
+  let isNextButtonActive = true;
   let itemSize;
 
 
@@ -129,7 +129,9 @@ const StudentsTabs = ({students, windowWidth}) => {
         {
           students.map(student => (
             <StudentsItem
+              itemId={student.id}
               name={student.name}
+              setLessons={setLessons}
               key={student.id}
             />
           ))

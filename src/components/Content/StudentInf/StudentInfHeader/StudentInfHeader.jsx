@@ -7,23 +7,7 @@ const StudentInfHeader = ({students}) => {
   return (
     <div className="student-inf__header">
       <StudentInfTabs/>
-      <div className="student-inf__tabs-selection tabs-selection">
-        <select>
-          {
-            students.map(student => (
-              <option
-                className="tabs-selection__tab tab"
-                id={student.id}
-              >
-                {/* <div className="tab__img">
-                  <img src=""/>
-                </div>
-                <div className="tab__name"></div> */}
-              </option>
-            ))
-          }
-        </select>
-      </div>
+      <div className="student-inf__tabs-selection tabs-selection"></div>
     </div>
   )
 }

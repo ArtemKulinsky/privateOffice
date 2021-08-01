@@ -3,6 +3,7 @@
   padding: 20px 45px 20px 45px;
   border-radius: 20px;
   margin: 3px;
+  overflow: auto;
   
   &__header {
     display: flex;
@@ -41,5 +42,13 @@
     .table {
       display: flex;
     }
+  }
+
+  @media (max-width:1700px) {
+    padding: 16px 30px 20px 30px;
+  }
+
+  @media (max-width:1366px) {
+    padding: 10px 15px 10px 15px;
   }
 }
